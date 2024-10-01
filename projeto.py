@@ -16,7 +16,7 @@ conversao_educacao = {
     'Associate': 2,
     'Bachelor': 3,
     'Master': 4,
-    'Doctorate': 5,
+    'Doctorate': 5
 }
 
 base_limpa.loc[:, 'Passed'] = base_limpa['Passed'].map(conversao_yes_no)
