@@ -34,13 +34,14 @@ base_limpa = base_limpa[base_limpa['Previous Grades'] <= 100]
 
 base_limpa = base_limpa.drop(columns=['Student ID'])
 
-# print(base_limpa.corr())
-correlacao = base_limpa.corr()
-
-correlacao.to_csv("correlacao.csv")
-
 print(base_limpa.head())
 
 analise = ProfileReport(base_limpa, title="Analise de Dados")
 
 analise.to_file("Analise de Dados.html")
+
+
+# print(base_limpa.corr())acao = base_limpa.corr()
+
+correlacao = base_limpa.corr()
+correlacao.to_csv("correlacao.csv")
